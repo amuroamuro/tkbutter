@@ -19,11 +19,13 @@ class WindowManager:
     def create_font(self, family: str="TkDefaultFont", size: int=16, weight: str="normal", slant: str="roman", underline: bool=False, overstrike: bool=False):
         font_number = len(self.__font_list)
         self.__font_list.append(Font(family=family, size=size, weight=weight, slant=slant, underline=underline, overstrike=overstrike))
+        return font_number
 
     #위젯 매니저
     def create_label(self, frame_number: int=0, text: str="Do you want some BUTTER?", font: int=0):
         wizet_number = len(self.__wizet_list)
         self.__wizet_list.append(Label(self.__frame_list[frame_number], text=text, font=self.__font_list[font]))
+        return wizet_number
 
     def set_size(self, geometry: str):
         self.__window.geometry(geometry)
