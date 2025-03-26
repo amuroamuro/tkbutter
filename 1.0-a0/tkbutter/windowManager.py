@@ -16,7 +16,7 @@ class WindowManager:
     def get_window():
         return 0
 
-    def create_font(self, family: str="TkDefaultFont", size: int=16, weight: str="mormal", slant: str="roman", underline: bool=False, overstrike: bool=False):
+    def create_font(self, family: str="TkDefaultFont", size: int=16, weight: str="normal", slant: str="roman", underline: bool=False, overstrike: bool=False):
         font_number = len(self.__font_list)
         self.__font_list.append(Font(family=family, size=size, weight=weight, slant=slant, underline=underline, overstrike=overstrike))
 
