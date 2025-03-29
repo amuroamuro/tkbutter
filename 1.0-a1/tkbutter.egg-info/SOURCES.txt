@@ -1,6 +1,0 @@
-setup.py
-tkbutter/windowManager.py
-tkbutter.egg-info/PKG-INFO
-tkbutter.egg-info/SOURCES.txt
-tkbutter.egg-info/dependency_links.txt
-tkbutter.egg-info/top_level.txt
